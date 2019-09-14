@@ -1,11 +1,11 @@
 package studyskill.dao;
 
 import org.springframework.stereotype.Repository;
-import studyskill.entity.UserEntity;
+import studyskill.entity.UserInfoEntity;
 
 @Repository
 public interface UserMapper {
 
-  UserEntity selectById(Integer userId);
+  UserInfoEntity selectById(Integer userId);
 
 }

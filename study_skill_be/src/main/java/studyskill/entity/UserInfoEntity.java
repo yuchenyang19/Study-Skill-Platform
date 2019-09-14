@@ -3,7 +3,7 @@ package studyskill.entity;
 import lombok.Data;
 
 @Data
-public class UserEntity {
+public class UserInfoEntity {
 
   private Integer id;
 
@@ -15,7 +15,17 @@ public class UserEntity {
 
   private String email;
 
+  private char sex;   // 'f' or 'm'
+
+  private int age;
+
+  private String address;
+
+  private String phone;
+
+  private String edu_level;
+
   public String toString(){
-    return "UserEntity: " + id + " " + username;
+    return "UserInfoEntity: " + id + " " + username;
   }
 }

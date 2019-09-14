@@ -1,7 +1,7 @@
 package studyskill.vo;
 
 import lombok.Data;
-import studyskill.entity.UserEntity;
+import studyskill.entity.UserInfoEntity;
 
 @Data
 public class UserVO {
@@ -12,11 +12,11 @@ public class UserVO {
   private String password;
   private String email;
 
-  public UserVO(UserEntity userEntity) {
-    this.id = userEntity.getId();
-    this.identity = userEntity.getIdentity();
-    this.username = userEntity.getUsername();
-    this.password = userEntity.getPassword();
-    this.email = userEntity.getEmail();
+  public UserVO(UserInfoEntity userInfoEntity) {
+    this.id = userInfoEntity.getId();
+    this.identity = userInfoEntity.getIdentity();
+    this.username = userInfoEntity.getUsername();
+    this.password = userInfoEntity.getPassword();
+    this.email = userInfoEntity.getEmail();
   }
 }

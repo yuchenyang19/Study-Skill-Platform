@@ -3,7 +3,7 @@ package studyskill.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import studyskill.dao.UserMapper;
-import studyskill.entity.UserEntity;
+import studyskill.entity.UserInfoEntity;
 import studyskill.form.UserForm;
 import studyskill.service.UserService;
 
@@ -14,12 +14,12 @@ public class UserServiceImpl implements UserService {
   UserMapper userMapper;
 
   @Override
-  public UserEntity login(String username, String password){
+  public UserInfoEntity login(String username, String password){
     return null;
   }
 
   @Override
-  public UserEntity createNewAccount(UserForm userForm){
+  public UserInfoEntity createNewAccount(UserForm userForm){
     return null;
   }
 
@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
   @Override
   public void test(){
-    UserEntity userEntity = userMapper.selectById(0);
-//    System.out.println(userEntity);
+    UserInfoEntity userInfoEntity = userMapper.selectById(0);
+//    System.out.println(userInfoEntity);
   }
 }

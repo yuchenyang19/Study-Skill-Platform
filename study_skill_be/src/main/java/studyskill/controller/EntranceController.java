@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import studyskill.constant.ResponseCode;
 import studyskill.constant.ServerException;
 import studyskill.constant.SimpleResponse;
-import studyskill.entity.UserEntity;
+import studyskill.entity.UserInfoEntity;
 import studyskill.form.LoginForm;
 import studyskill.form.UserForm;
 import studyskill.service.UserService;
@@ -26,9 +26,9 @@ public class EntranceController {
 
   @PostMapping("/register")
   public SimpleResponse register(HttpSession session, @RequestBody UserForm userForm){
-    UserEntity userEntity = null;
+    UserInfoEntity userInfoEntity = null;
     try{
-      userEntity = userService.createNewAccount(userForm);
+      userInfoEntity = userService.createNewAccount(userForm);
     }catch (ServerException e){
       e.printStackTrace();
       return SimpleResponse.error(e.getMessage());
@@ -41,9 +41,9 @@ public class EntranceController {
 
   @PostMapping("/login")
   public SimpleResponse login(HttpSession session, @RequestBody LoginForm loginForm){
-    UserEntity userEntity = null;
+    UserInfoEntity userInfoEntity = null;
     try{
-      userEntity = userService.login(loginForm.getUsername(), loginForm.getPassword());
+      userInfoEntity = userService.login(loginForm.getUsername(), loginForm.getPassword());
     }catch (ServerException e){
       e.printStackTrace();
       return SimpleResponse.error(e.getMessage());

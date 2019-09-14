@@ -8,7 +8,7 @@ import studyskill.constant.IdentityCode;
 import studyskill.constant.ResponseCode;
 import studyskill.constant.ServerException;
 import studyskill.constant.SimpleResponse;
-import studyskill.entity.UserEntity;
+import studyskill.entity.UserInfoEntity;
 import studyskill.service.UserService;
 import studyskill.vo.UserVO;
 
@@ -26,7 +26,7 @@ public class UserController {
   }
 
   public void certify(Object user){
-    UserVO userVO = new UserVO((UserEntity)user);
+    UserVO userVO = new UserVO((UserInfoEntity)user);
     int identity = userVO.getIdentity();
     if(identity != IdentityCode.student && identity != IdentityCode.teacher)
       throw new ServerException(ResponseCode.ERROR, "must be student or teacher");
