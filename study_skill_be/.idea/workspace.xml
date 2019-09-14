@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8668d588-64cf-4ef6-ae17-02ad4cd465d9" name="Default Changelist" comment="fill entitiies">
-      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/CommentsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/CourseInfoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/RequestsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/TradesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/UsersOfCoursesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/JoinRequestsEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/controller/EntranceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/UserInfoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/vo/UserVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserEntityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserEntityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studyskill/entity/RequestsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studyskill/entity/TempRequestsEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,10 +52,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/RequestsEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/TempRequestsEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/JoinRequestsEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,15 +94,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/EntranceController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -116,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="270">
               <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -213,6 +205,8 @@
         <option value="$PROJECT_DIR$/src/main/java/studyskill/entity/TradesEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/studyskill/entity/RequestsEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/studyskill/entity/CommentsEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/studyskill/entity/TempRequestsEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/studyskill/entity/JoinRequestsEntity.java" />
       </list>
     </option>
   </component>
@@ -385,7 +379,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568472719217" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568473199158" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -447,7 +441,7 @@
       <workItem from="1568361827033" duration="12151000" />
       <workItem from="1568382780281" duration="3416000" />
       <workItem from="1568429726409" duration="2770000" />
-      <workItem from="1568470836944" duration="1817000" />
+      <workItem from="1568470836944" duration="2277000" />
     </task>
     <task id="LOCAL-00001" summary="add UserVO">
       <created>1568419154301</created>
@@ -460,13 +454,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24921000" />
+    <option name="totallyTimeSpent" value="25381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -515,9 +509,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/2.1.5.RELEASE/spring-boot-starter-2.1.5.RELEASE.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/LoginController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/service/AccountService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/TestController.java" />
@@ -807,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/RequestsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/CommentsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -841,9 +825,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/EntranceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="270">
           <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -851,10 +845,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/controller/EntranceController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/TempRequestsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studyskill/entity/JoinRequestsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

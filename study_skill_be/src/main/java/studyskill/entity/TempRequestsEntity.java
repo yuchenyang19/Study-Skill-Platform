@@ -3,7 +3,7 @@ package studyskill.entity;
 import lombok.Data;
 
 @Data
-public class RequestsEntity {
+public class TempRequestsEntity {
 
   private int id;
 
