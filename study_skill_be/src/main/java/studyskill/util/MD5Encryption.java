@@ -12,4 +12,14 @@ public class MD5Encryption {
     byte[] output = md.digest(input);
     return Base64.encodeBase64String(output);
   }
+
+  public static void main(String[] args){
+    try {
+      String result = MD5Encryption.encryp("superfreeeeesa;dlfkjas;l");
+      System.out.println(result);
+      System.out.println(result.length());
+    }catch (Exception e){
+
+    }
+  }
 }
